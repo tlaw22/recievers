@@ -5,7 +5,7 @@ import "log"
 type myStruct struct {
 	FirstName string
 }
-
+// The * in front of the myStruct is signafying that myStruct is the reciever inside of this function
 func (m *myStruct) printName() string {
 	return m.FirstName
 }
